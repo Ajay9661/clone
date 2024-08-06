@@ -1,0 +1,316 @@
+.contact-card {
+  background: #fff;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 0px #a10808;
+}
+.contact-card .card-body {
+  padding: 2rem;
+}
+.contact-icon {
+  font-size: 4rem;
+  color: #0062cc;
+  margin-bottom: 1rem;
+}
+.btnContact {
+  width: 100%;
+  border: none;
+  padding: 1.5%;
+  background: #0062cc;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+  
+  
+  
+  .logo{
+      width: 250px;
+      height: 70px;
+  }
+ 
+  
+    .product-item {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .product-img {
+      position: relative;
+    }
+    
+    .product-img img {
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+    
+    .product-img:hover img {
+      transform: scale(1.1);
+    }
+    
+    .product-img a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .product-img:hover a {
+      opacity: 1;
+    }
+    
+
+    
+    .bg-secondary h3 {
+      color: #fff;
+    }
+    
+    @media (min-width: 9922px) {
+      .navbar.hidden {
+        top: -100px;
+        transition: top 0.3s;
+      }
+    }
+    .bg-gallery {
+      background-image: url('image/powerplant2.jpg');
+      background-size: cover;
+      background-position: center;
+  }
+  
+  .gallery-wrapper {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+  }
+  
+  .gallery-container {
+      overflow-x: scroll;
+      display: flex;
+      scroll-behavior: smooth;
+  }
+  
+  .gallery-container::-webkit-scrollbar {
+      display: none; /* Hide the scrollbar */
+  }
+  
+  .gallery-container {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+  }
+  
+  .gallery {
+      display: flex;
+      flex-wrap: nowrap;
+  }
+  
+  .gallery-item {
+      position: relative;
+      margin: 10px;
+      width: calc(33.333% - 20px); /* Adjust this width for item size */
+      flex: 0 0 auto;
+      overflow: hidden; /* Ensure the zoom effect stays within bounds */
+  }
+  
+  .gallery-item img {
+      display: block;
+      transition: transform 0.3s ease; /* Add transition for zoom effect */
+  }
+  
+  .gallery-item:hover img {
+      transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .gallery-item .btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+  }
+  
+  .gallery-item:hover .btn {
+      opacity: 1;
+  }
+  
+  .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(27, 20, 229, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1;
+  }
+  
+  .prev {
+      left: 0;
+  }
+  
+  .next {
+      right: 0;
+  }
+  .red{
+    background-color:green;
+  }
+  .social-icons a.btn-twitter {
+    color: #1da1f2; /* default color */
+    background-color: #ffffff;
+    transition: color 0.2s ease; /* smooth transition */
+  }
+  .social-icons a.btn-facebook {
+    color: #3b5998; /* default color */
+    background-color: #ffffff;
+    transition: color 0.2s ease; /* smooth transition */
+  }
+  .social-icons a.btn-linkedin {
+    color: #0077b5; /* default color */
+    background-color: #ffffff;
+    transition: color 0.2s ease; /* smooth transition */
+  }
+  .social-icons a.btn-instagram {
+    color: #E1306C; /* default color */
+    background-color: #ffffff;
+    transition: color 0.2s ease; /* smooth transition */
+  }
+  .social-icons a:hover {
+    color: inherit; /* to retain inherited color on hover */
+  }
+  
+  .social-icons a.btn-twitter:hover {
+    color: #ffffff; /* Twitter blue */
+    background-color: #1da1f2;
+  }
+  
+  .social-icons a.btn-facebook:hover {
+    color: #ffffff; /* Facebook blue */
+    background-color: #3b5998;
+    
+  }
+  
+  .social-icons a.btn-linkedin:hover {
+    color: #ffffff; /* LinkedIn blue */
+    background-color: #0077b5;
+  }
+  
+  .social-icons a.btn-instagram:hover {
+    background-color: #E1306C;
+    color: #ffffff; /* Instagram red */
+  }
+   /* Style for back-to-top button */
+   .back-to-top {
+    display: none; /* Hide by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+  }
+  
+  /* Style for back-to-top button on hover */
+  .back-to-top:hover {
+    text-decoration: none;
+  }
+  @keyframes zoomInOut {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+  }
+  
+  .zoom-arrow {
+    font-size: 24px; /* Adjust size as needed */
+    color: white; /* Adjust color as needed */
+    animation: zoomInOut 1s infinite;
+  }
+  
+  .arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Media query for mobile view */
+  @media (max-width: 768px) {
+    .logo {
+      width: 150px;
+      height: 50px;
+    }
+
+    
+    .product-item {
+      margin: 10px 0;
+    }
+    
+    .product-img a {
+      top: 40%;
+    }
+    
+    .bg-secondary h3 {
+      font-size: 18px;
+    }
+    
+    .gallery-item {
+      width: calc(50% - 20px); /* Adjust this width for item size */
+    }
+    
+    .prev, .next {
+      top: 45%;
+      padding: 5px;
+    }
+    
+    .social-icons a {
+      font-size: 12px;
+    }
+    
+    .back-to-top {
+      bottom: 10px;
+      right: 10px;
+    }
+    
+    .arrow-container {
+      display: none;
+    }
+  }
+  /* Add linear gradient to the background image */
+  .bg-gallery {
+    position: relative;
+    padding: 120px 0;
+    margin: 90px 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('image/service1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  #about h1.display-4 {
+    font-size: 3rem; /* Adjust as needed */
+    font-family: 'Arial', sans-serif; /* Change font family */
+  }
+  #about h6.text-uppercase {
+    font-size: 1.5rem; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    color: #007bff; /* Text color (blue) */
+    text-transform: uppercase; /* Uppercase text */
+    margin-bottom: 1rem; /* Bottom margin */
+    position: relative; /* Position relative for pseudo-element */
+    text-align: center;
+  }
+  
+  #about h6.text-uppercase::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Adjust position to align with the underline */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Underline height */
+    background-color: #007bff; /* Underline color */
+  }
